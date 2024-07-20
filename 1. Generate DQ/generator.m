@@ -162,7 +162,7 @@ while delta>10^(-8)
     %%%Saving some variables and showing the residual norm
     count=count+1;
     if mod(count,1)==0
-        Residual_Norm=delta
+        Residual_Norm=delta;
         iters(count)=delta;
         tikhcons(count)=dtikh;
         ndef(count)=norm(def);nobj(count)=norm(J*def-R);ndcr(count)=ndecr;
